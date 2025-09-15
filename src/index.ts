@@ -6,3 +6,7 @@ let currentInput: string = "";
 buttons.forEach((btn) => {
   btn.addEventListener("click", () => {
     const value = btn.textContent ?? "";
+     if (value === "C") {
+      currentInput = "";
+      display.value = "";
+    } else if (value === "=") {
