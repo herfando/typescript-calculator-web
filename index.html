@@ -39,3 +39,8 @@
       backdrop-filter: blur(10px);
       animation: slideIn 1s ease-out;
     }
+
+    @keyframes slideIn {
+      from { transform: translateY(100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
