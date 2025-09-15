@@ -1,34 +1,35 @@
-# TS Web Calculator
+# TypeScript Web Calculator
 
-> An interactive web calculator built with pure TypeScript, HTML, and CSS. Perform basic arithmetic with a sleek design, responsive layout, and smooth button animations—all running directly in the browser.
+> A modern, interactive web calculator built entirely with TypeScript, HTML, and CSS. Designed for fast arithmetic calculations, smooth animations, and full responsiveness across devices.
 
 ---
 
-## Demo
+## 🚀 Demo
 - Live demo: [Add your link here]  
 - Screenshot:  
-![Calculator Screenshot](./screenshot.png) *(Add a screenshot of your calculator here)*
+![Calculator Screenshot](./screenshot.png) *(Add your screenshot here)*
 
 ---
 
-## Features
-- Perform basic arithmetic: `+`, `-`, `×`, `÷`  
-- Clear (`C`) and calculate (`=`)  
+## ✨ Features
+- Basic arithmetic operations: `+`, `-`, `×`, `÷`  
+- Clear (`C`) and Evaluate (`=`) buttons  
+- Smooth button click animations  
 - Responsive layout for desktop and mobile  
-- Smooth animations for buttons and display  
-- Lightweight, no frameworks required  
+- Lightweight: no frameworks required, just TypeScript, HTML, and CSS  
+- Easy to extend for more advanced features  
 
 ---
 
-## Tech Stack
-- **TypeScript** – type-safe logic, compiled to JavaScript  
-- **HTML5 & CSS3** – structure and styling  
-- **Vanilla JS** – browser-interactive logic  
-- **No frameworks** – lightweight and simple  
+## 🛠 Tech Stack
+- **TypeScript** – type-safe logic and maintainable code  
+- **HTML5 & CSS3** – clean structure and styling  
+- **Vanilla JavaScript** – compiled from TypeScript for browser interaction  
+- **No frameworks** – keeps the project lightweight  
 
 ---
 
-## Installation & Usage
-1. Clone the repo:  
+## ⚡ Installation & Usage
+1. Clone the repository:  
 ```bash
-git clone https://github.com/your-username/ts-web-calculator.git
+git clone https://github.com/herfando/typescript-calculator-web.git
