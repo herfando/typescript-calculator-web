@@ -10,3 +10,11 @@ buttons.forEach((btn) => {
       currentInput = "";
       display.value = "";
     } else if (value === "=") {
+        try {
+        // ⚠️ eval digunakan untuk simple calculator (belajar saja)
+        currentInput = eval(currentInput).toString();
+        display.value = currentInput;
+      } catch {
+        display.value = "Error";
+        currentInput = "";
+      }
