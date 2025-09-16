@@ -24,3 +24,146 @@
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
+
+    .background-img {
+      position: absolute;
+      top: 8%;
+      right: 8%;
+      width: 180px;
+      opacity: 0.15;
+      animation: float 6s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .calculator {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 25px;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      backdrop-filter: blur(15px);
+      animation: slideIn 1s ease-out;
+      width: 330px;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .title {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+
+    input {
+      width: 100%;
+      height: 70px;
+      font-size: 2rem;
+      margin-bottom: 18px;
+      text-align: right;
+      padding: 12px;
+      border-radius: 15px;
+      border: none;
+      outline: none;
+      background: rgba(255,255,255,0.3);
+      box-shadow: inset 3px 3px 6px rgba(0,0,0,0.2),
+                  inset -3px -3px 6px rgba(255,255,255,0.4);
+      color: #222;
+      font-weight: 600;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 70px);
+      gap: 12px;
+      justify-content: center;
+    }
+
+    button {
+      height: 60px;
+      font-size: 1.3rem;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      background: rgba(255,255,255,0.15);
+      color: #fff;
+      font-weight: 600;
+      transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+      box-shadow: 3px 3px 6px rgba(0,0,0,0.25),
+                  -3px -3px 6px rgba(255,255,255,0.2);
+    }
+
+    button:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+      background: rgba(255,255,255,0.25);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    .operator {
+      background: linear-gradient(135deg, #ff6a00, #ee0979);
+    }
+
+    .operator:hover {
+      box-shadow: 0 6px 15px rgba(238,9,121,0.6);
+    }
+
+    .equal {
+      background: linear-gradient(135deg, #36d1dc, #5b86e5);
+      grid-column: span 2;
+    }
+
+    .clear {
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    }
+  </style>
+</head>
+<body>
+  <img src="./assets/finance.png" alt="finance" class="background-img">
+
+  <div class="calculator">
+    <div class="title">💻 TypeScript Calculator</div>
+    <input type="text" id="display" disabled />
+    <div class="buttons">
+      <button class="clear">C</button>
+      <button>(</button>
+      <button>)</button>
+      <button class="operator">/</button>
+
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="operator">*</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button class="operator">-</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="operator">+</button>
+
+      <button>0</button>
+      <button>.</button>
+      <button class="equal">=</button>
+    </div>
+  </div>
+
+  <script type="module" src="./dist/index.js"></script>
+</body>
+</html>
